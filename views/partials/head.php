@@ -14,4 +14,4 @@
 
 <body>
 
-    <h1>My pet store</h1>
+    <h1 class="text-center py-3 mb-4">My pet store</h1>

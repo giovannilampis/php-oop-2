@@ -1,6 +1,9 @@
-<footer>
+<footer class="mt-4">
 
-    <p>&copy GioGioGio Pet Store</p>
+    <div class="container">
+        <p>&copy GioGioGio Pet Store</p>
+    </div>
+
 
 </footer>
 
