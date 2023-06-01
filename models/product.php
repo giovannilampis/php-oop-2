@@ -16,6 +16,11 @@ class Product
         $this->description = $_description;
     }
 
+    public function get_product_details()
+    {
+        return " This product is called: $this->name, it cost € $this->price ";
+    }
+
 }
 
 ?>
