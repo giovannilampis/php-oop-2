@@ -2,6 +2,13 @@
 
 include __DIR__ . '/../../models/product.php';
 
+$arrayProducts = [
+    new Product('https://unsplash.com/it/foto/w6elADh_jww', 'croquettes', '10', 'Best quality croquettes for the pet you love'),
+    new Product('https://unsplash.com/it/foto/ZJsM3GRdAnY', 'pate', '18', 'Best quality pate for the pet you need to pamper'),
+    new Product('https://unsplash.com/it/foto/A7nK49HCqSI', 'pet bed', '70', 'Make sure your pet to have the best sleep time'),
+    new Product('https://unsplash.com/it/foto/q9iyCG7FRmQadd $movieA & $movieB, instances of class Movie', 'game', '8', 'Let your pet to have the best games to play with')
+];
+
 $product_0000 = new Product('https://unsplash.com/it/foto/w6elADh_jww', 'croquettes', '10', 'Best quality croquettes for the pet you love');
 
 $product_0001 = new Product('https://unsplash.com/it/foto/ZJsM3GRdAnY', 'pate', '18', 'Best quality pate for the pet you need to pamper');
@@ -26,7 +33,7 @@ $product_0003 = new Product('https://unsplash.com/it/foto/q9iyCG7FRmQadd $movieA
             <h5 class="card-title">
                 <?php echo $product_0000->price ?>
             </h5>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere</a>
         </div>
     </div>
 
