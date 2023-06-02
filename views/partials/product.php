@@ -15,7 +15,7 @@ $clicked_product_number = 1;
                 <div class="card mb-4">
                     <img src="<?php echo $arrayProducts[$i]->image ?>" class="card-img-top"
                         alt="<?php echo $arrayProducts[$i]->name ?>">
-                    <div class="card-body">
+                    <div class="card-body position-relative">
                         <h2 class="card-title">
                             <?php echo $arrayProducts[$i]->name ?>
                         </h2>
@@ -30,10 +30,9 @@ $clicked_product_number = 1;
                             data-bs-toggle="modal" data-bs-target="<?php echo "#product" . $i ?>">
                             <?php echo $arrayProducts[$i]->name ?>
                         </a>
-                        <span>
-                            INDEX:
-                            <?php echo $i ?>
-                        </span>
+                        <div class="animal_icon">
+                            <i class="fa-solid fa-cat"></i>
+                        </div>
                     </div>
                 </div>
 
