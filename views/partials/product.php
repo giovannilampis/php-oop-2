@@ -1,7 +1,5 @@
 <?php
 
-// include __DIR__ . '/../../models/product.php';
-
 include __DIR__ . '/../../database/db.php';
 
 $clicked_product_number = 1;
@@ -14,7 +12,7 @@ $clicked_product_number = 1;
 
         <?php for ($i = 0; $i < count($arrayProducts); $i++) { ?>
             <div class="col-6">
-                <div class="card">
+                <div class="card mb-4">
                     <img src="<?php echo $arrayProducts[$i]->image ?>" class="card-img-top"
                         alt="<?php echo $arrayProducts[$i]->name ?>">
                     <div class="card-body">
