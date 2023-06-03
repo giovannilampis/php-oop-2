@@ -31,7 +31,11 @@ $clicked_product_number = 1;
                             <?php echo $arrayProducts[$i]->name ?>
                         </a>
                         <div class="animal_icon text-center">
-                            <i class="fa-solid fa-cat"></i>
+                            <?php if ($arrayProducts[$i]->category === 'cat') { ?>
+                                <i class="fa-solid fa-cat"></i>
+                            <?php } else { ?>
+                                <i class="fa-solid fa-dog"></i>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
