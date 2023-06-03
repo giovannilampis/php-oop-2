@@ -30,7 +30,7 @@ $clicked_product_number = 1;
                             data-bs-toggle="modal" data-bs-target="<?php echo "#product" . $i ?>">
                             <?php echo $arrayProducts[$i]->name ?>
                         </a>
-                        <div class="animal_icon">
+                        <div class="animal_icon text-center">
                             <i class="fa-solid fa-cat"></i>
                         </div>
                     </div>

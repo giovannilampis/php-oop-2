@@ -8,11 +8,8 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    border: 0.5px solid black;
+    border: 2.5px solid black;
     width: 2rem;
     aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50%;line-height: 2rem;
 }
