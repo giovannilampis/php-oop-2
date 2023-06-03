@@ -2,7 +2,7 @@
 
 class Product
 {
-    private $image;
+    public $image;
     public $name;
     public $price;
     public $description;
@@ -13,29 +13,12 @@ class Product
         $this->price = $_price;
         $this->description = $_description;
     }
-
-    public function getImage()
-    {
-        return $this->image;
-    }
-    public function setImage(string $_image)
-    {
-        $this->image = $_image;
-    }
     public function get_product_details()
     {
         return " This product is called: $this->name, it cost € $this->price ";
     }
 
 }
-
-$test = new Product();
-
-$test->name = "ss";
-
-$test->setImage("ss"); // modificare il contenuto
-$test->getImage(); // ottenere il dato
-
 class Animal extends Product
 {
     public $animal; // Cane / gatto 
@@ -57,8 +40,4 @@ class kindOfProduct extends Animal
         $this->category = $_category;
     }
 }
-
-$cuccia = new kindOfProduct("Cuccia", "Dog", "http:", )
-
-
-    ?>
+?>
