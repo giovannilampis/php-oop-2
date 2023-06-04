@@ -20,7 +20,8 @@ $clicked_product_number = 1;
                             <?php echo $arrayProducts[$i]->name ?>
                         </h2>
                         <p class="card-text">
-                            <?php echo $arrayProducts[$i]->description ?>
+                            <?php echo $arrayProducts[$i]->category ?> for
+                            <?php echo $arrayProducts[$i]->animal ?>
                         </p>
                         <h3 class="card-title">
                             €
@@ -28,7 +29,7 @@ $clicked_product_number = 1;
                         </h3>
                         <a onclick=" <?php $clicked_product_number = $i ?> " href="" class="btn" data-bs-toggle="modal"
                             data-bs-target="<?php echo "#product" . $i ?>">
-                            <?php echo $arrayProducts[$i]->name ?>
+                            Learn About <?php echo $arrayProducts[$i]->name ?>
                         </a>
                         <div class="animal_icon text-center">
                             <?php if ($arrayProducts[$i]->animal == 'cat') { ?>
@@ -54,7 +55,9 @@ $clicked_product_number = 1;
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <p class="card-text">
+                                <?php echo $arrayProducts[$i]->description ?>
+                            </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
