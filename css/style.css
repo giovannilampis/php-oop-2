@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #faeee7;
+}
+
 .animal_icon {
     position: absolute;
     top: 1rem;
@@ -11,5 +15,25 @@
     border: 2.5px solid black;
     width: 2rem;
     aspect-ratio: 1 / 1;
-    border-radius: 50%;line-height: 2rem;
+    border-radius: 50%;
+    line-height: 2rem;
+}
+
+footer,
+header {
+    height: 5rem;
+    background-color: #ff8ba7;
+    color: #faeee7;
+
+    line-height: 5rem;
+}
+
+.card {
+    background-color: #ffc6c7;
+    color: #594a4e;
+}
+
+.btn {
+    background-color: #ff8ba7;
+    color: #faeee7;
 }

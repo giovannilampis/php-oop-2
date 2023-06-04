@@ -19,7 +19,7 @@ class Product
     }
 
 }
-class Animal extends Product
+class ProductAnimal extends Product
 {
     public $animal; // Cane / gatto 
 
@@ -30,7 +30,7 @@ class Animal extends Product
     }
 }
 
-class kindOfProduct extends Animal
+class KindOfProduct extends ProductAnimal
 {
     public $category; // Cuccia 
 

@@ -4,7 +4,6 @@
         <p>&copy GioGioGio Pet Store</p>
     </div>
 
-
 </footer>
 
 <!-- BOOTSTRAP JAVASCRIPT CDN -->

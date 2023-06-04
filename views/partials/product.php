@@ -26,8 +26,8 @@ $clicked_product_number = 1;
                             €
                             <?php echo $arrayProducts[$i]->price ?>
                         </h3>
-                        <a onclick=" <?php $clicked_product_number = $i ?> " href="" class="btn btn-primary"
-                            data-bs-toggle="modal" data-bs-target="<?php echo "#product" . $i ?>">
+                        <a onclick=" <?php $clicked_product_number = $i ?> " href="" class="btn" data-bs-toggle="modal"
+                            data-bs-target="<?php echo "#product" . $i ?>">
                             <?php echo $arrayProducts[$i]->name ?>
                         </a>
                         <div class="animal_icon text-center">
