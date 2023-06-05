@@ -1,7 +1,8 @@
 <?php
 
-throw new Exception('Invalid price for product: $this->name');
-
+class InvalidProdExcep extends Exception
+{
+}
 class Product
 {
     public $image;
@@ -11,24 +12,24 @@ class Product
     public function __construct($_image, $_name, $_price, $_description)
     {
         $this->image = $_image;
-        $this->name = $_name;
-        // $this->price = $_price;
-        $this->setPrice($_price);
+        $this->setName($_name);
+        $this->price = $_price;
         $this->description = $_description;
+    }
+
+    public function setName($_name)
+    {
+        if (empty($_name)) {
+            throw new InvalidProdExcep("Product NAME has to be declared !");
+
+        }
+        $this->name = $_name;
     }
     public function get_product_details()
     {
         return " This product is called: $this->name, it cost € $this->price ";
     }
 
-    public function setPrice($_price)
-    {
-        if ($_price <= 0) {
-            throw new Exception('Invalid price for product: $this->name');
-        }
-        return $_price;
-
-    }
 }
 class ProductAnimal extends Product
 {
