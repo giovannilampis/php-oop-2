@@ -1,8 +1,5 @@
 <?php
 
-class InvalidProdExcep extends Exception
-{
-}
 class Product
 {
     public $image;
@@ -20,8 +17,7 @@ class Product
     public function setName($_name)
     {
         if (empty($_name)) {
-            throw new InvalidProdExcep("Product NAME has to be declared !");
-
+            throw new Exception("Product NAME has to be declared !");
         }
         $this->name = $_name;
     }
@@ -29,6 +25,7 @@ class Product
     {
         return " This product is called: $this->name, it cost € $this->price ";
     }
+
 
 }
 class ProductAnimal extends Product
