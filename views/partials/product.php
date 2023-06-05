@@ -55,6 +55,9 @@ $clicked_product_number = 1;
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <p>
+                                <?php echo $arrayProducts[$i]->name ?>
+                            </p>
                             <p class="card-text">
                                 <?php echo $arrayProducts[$i]->description ?>
                             </p>

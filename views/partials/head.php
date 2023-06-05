@@ -20,5 +20,5 @@
 <body>
 
     <header class="mb-5">
-        <h1 class="text-center py-3 mb-4">My pet store</h1>
+        <h1 class="text-center py-3 mb-4">My Pet Store</h1>
     </header>

@@ -1,5 +1,7 @@
 <?php
 
+throw new Exception('Invalid price for product: $this->name');
+
 class Product
 {
     public $image;
@@ -17,7 +19,6 @@ class Product
     {
         return " This product is called: $this->name, it cost € $this->price ";
     }
-
 }
 class ProductAnimal extends Product
 {
@@ -39,5 +40,6 @@ class KindOfProduct extends ProductAnimal
         parent::__construct($_animal, $_image, $_name, $_price, $_description);
         $this->category = $_category;
     }
+
 }
 ?>
