@@ -25,9 +25,9 @@ class Product
     {
         if ($_price <= 0) {
             throw new Exception('Invalid price for product: $this->name');
-        } else {
-            return $_price;
         }
+        return $_price;
+
     }
 }
 class ProductAnimal extends Product
