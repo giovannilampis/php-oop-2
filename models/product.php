@@ -22,7 +22,6 @@ trait Discountable
 
 class Product
 {
-    use Discountable;
     public $image;
     public $name;
     public $price;
@@ -62,6 +61,8 @@ class ProductAnimal extends Product
 
 class KindOfProduct extends ProductAnimal
 {
+    use Discountable;
+
     public $category; // Cuccia 
 
     public function __construct(string $_category, $_animal, $_image, $_name, $_price, $_description)
