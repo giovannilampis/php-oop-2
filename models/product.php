@@ -12,6 +12,7 @@ trait Discountable
 
 class Product
 {
+    use Discountable;
     public $image;
     public $name;
     public $price;
