@@ -3,6 +3,11 @@
 trait Discountable
 {
     public $discount;
+
+    public function setDiscount($_discount)
+    {
+        $this->discount = $_discount;
+    }
 }
 
 class Product
