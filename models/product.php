@@ -1,5 +1,10 @@
 <?php
 
+trait Discountable
+{
+    public $discount;
+}
+
 class Product
 {
     public $image;
