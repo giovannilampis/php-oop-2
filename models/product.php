@@ -8,6 +8,13 @@ trait Discountable
     {
         $this->discount = $_discount;
     }
+
+    public function applyDiscount()
+    {
+        if ($this->discount > 0) {
+            $discountedPrice = $this->price - ($this->price * $this->discount / 100);
+        }
+    }
 }
 
 class Product
