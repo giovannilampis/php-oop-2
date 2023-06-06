@@ -13,7 +13,9 @@ trait Discountable
     {
         if ($this->discount > 0) {
             $discountedPrice = $this->price - ($this->price * $this->discount / 100);
-            return "The discounted price is €{$discountedPrice}";
+            return " The discounted price is €{$discountedPrice} ";
+        } else {
+            return " No discount available ";
         }
     }
 }
